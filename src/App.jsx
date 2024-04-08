@@ -8,9 +8,15 @@ import Contact from "@/components/sections/Contact";
 import Header from "@/components/Header";
 import MobileNav from "./components/MobileNav";
 
+import { useEffect } from "react";
+
 import "./App.css";
 
 function App() {
+    useEffect(() => {
+        document.title = "Zonayed Rahman";
+    }, []);
+
     return (
         <div className="App relative">
             <Header />
